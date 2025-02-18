@@ -40,4 +40,4 @@ For a fully functional version, a backend with **PHP, Node.js, or Python** is ne
 ## 📂 Setup & Usage  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/B212M/your-repo.git
+   git clone https://github.com/B212M/GDNC.git
