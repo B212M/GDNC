@@ -5,17 +5,14 @@ body {
     background-color: #f5f5f5;
     color: #1a237e;
 }
+
 header {
     background-color: #1a237e;
     color: white;
-    padding: 15px;
+    padding: 15px 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
+
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -27,29 +24,38 @@ header {
     top: 15px;
     cursor: pointer;
 }
-nav {
-    margin-top: 10px;
+
+h1{
+    margin-top: 30px;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 18px;
 }
+
 nav ul li {
-    margin: 5px 10px;
+    margin: 5px 15px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
 }
 .hero {
     text-align: center;
     padding: 20px 20px 50px;
-    margin-top: 85px;
+    margin-top: 25px;
 }
 .content {
     max-width: 800px;
@@ -186,6 +192,8 @@ footer {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    width: 70%;
+    text-align: center;
 }
 /* ensaf logo */
 /* Style for the ensaf logo */
@@ -199,9 +207,9 @@ footer {
 }
 
 /* For screens smaller than 600px */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .ensaf {
-        max-width: 80%;  /* Limits the image width on small screens */
+        max-width: 90%;  /* Limits the image width on small screens */
     }
 }
 
@@ -296,7 +304,7 @@ footer {
 }
 
 /* Responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #course-list li {
         width: 90%; /* Ensure the card adapts to small screens */
         padding: 15px;
@@ -310,27 +318,24 @@ footer {
 
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
-    h1 {
-        margin-top: 40px;
-    }
+
     nav ul {
-        flex-direction: column;
-        text-align: center;
         display: none;
-        background: #1a237e;
-        position: absolute;
+        flex-direction: column;
+        background-color: #1a237e;
         width: 100%;
-        top: 80px;
-        right: 0;
+        text-align: center;
         padding: 10px 0;
     }
+
     nav ul.active {
-        display: block;
+        display: flex;
     }
+
     nav ul li {
         margin: 10px 0;
     }
