@@ -111,15 +111,15 @@ document.querySelectorAll('input[name="course"]').forEach((radio) => {
         const pdfs = fetchPDFs(selectedCourse);
         
         // Display the PDFs
-        pdfs.forEach(pdf => {
-            const listItem = document.createElement('li');
-            const pdfLink = document.createElement('a');
-            pdfLink.href = pdf.path;
-            pdfLink.target = "_blank";
-            pdfLink.innerHTML = `<img class="pdf-icon" src="pdf.png" alt="PDF Icon"> ${pdf.name}`;
-            listItem.appendChild(pdfLink);
-            courseList.appendChild(listItem);
-        });
+        // pdfs.forEach(pdf => {
+        //     const listItem = document.createElement('li');
+        //     const pdfLink = document.createElement('a');
+        //     pdfLink.href = pdf.path;
+        //     pdfLink.target = "_blank";
+        //     pdfLink.innerHTML = `<img class="pdf-icon" src="pdf.png" alt="PDF Icon"> ${pdf.name}`;
+        //     listItem.appendChild(pdfLink);
+        //     courseList.appendChild(listItem);
+        // });
     });
 });
 
@@ -196,9 +196,11 @@ function fetchSubCoursePDFs(course, subCourse) {
     }else if (course === "S2" && subCourse === "Cours") {
         pdfs.push({ name: "S2  - Pas de cours pour le moment", path: `${courseFolder}lab1.pdf` });
     }else if (course === "S2" && subCourse === "TD") {
-        pdfs.push({ name: "S2  - RESAUX SANS FILS TD 1", path: `${courseFolder}1.pdf` });
+        pdfs.push({ name: "S2  - RESAUX SANS FILS TD 1", path: "https://drive.google.com/uc?export=download&id=1F_BcUln6VIun-virKm8Vx9XAFF9qAYIR" });
+        pdfs.push({ name: "S2  - RESAUX SANS FILS TD 2", path: `${courseFolder}1.pdf` });
+        pdfs.push({ name: "S2  - MATH CYBER TD 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
     }else if (course === "S2" && subCourse === "TP") {
-        pdfs.push({ name: "S2  - Pas de tps pour le moment", path: `${courseFolder}lab1.pdf` });
+        pdfs.push({ name: "S2  - MATH CYBER TP 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
     }else if (course === "S3" && subCourse === "Cours") {
         pdfs.push({ name: "S3  - Pas de cours pour le moment", path: `${courseFolder}lab1.pdf` });
     }else if (course === "S3" && subCourse === "TD") {
