@@ -194,7 +194,8 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S1 TP - Cpp", path: `${courseFolder}4.pdf` });
         pdfs.push({ name: "S1 TP - SE", path: `${courseFolder}5.zip` });
     }else if (course === "S2" && subCourse === "Cours") {
-        pdfs.push({ name: "S2  - Pas de cours pour le moment", path: `${courseFolder}lab1.pdf` });
+        pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 1", path: "https://docs.google.com/presentation/d/1DHWYiH4s4MhNs60rNyhn920HWiGQnQvi/export/pptx" });
+        pdfs.push({ name: "S2  - SEANCE 2 BD AVANCE", path: "https://drive.google.com/uc?export=download&id=1bU8jehdUKzsD1r6KFNwkYWuI8Oty1vUc" });
     }else if (course === "S2" && subCourse === "TD") {
         pdfs.push({ name: "S2  - RESAUX SANS FILS TD 1", path: "https://drive.google.com/uc?export=download&id=1F_BcUln6VIun-virKm8Vx9XAFF9qAYIR" });
         pdfs.push({ name: "S2  - RESAUX SANS FILS TD 2", path: `${courseFolder}1.pdf` });
