@@ -198,7 +198,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - SEANCE 2 BD AVANCE", path: "https://drive.google.com/uc?export=download&id=1bU8jehdUKzsD1r6KFNwkYWuI8Oty1vUc" });
     }else if (course === "S2" && subCourse === "TD") {
         pdfs.push({ name: "S2  - RESAUX SANS FILS TD 1", path: "https://drive.google.com/uc?export=download&id=1R3gGoBbE6Lp4tfE2ICWdMSgga0AhE-eO" });
-        pdfs.push({ name: "S2  - RESAUX SANS FILS TD 2", path: `${courseFolder}1.pdf` });
+        pdfs.push({ name: "S2  - RESAUX SANS FILS TD 2", path: "https://drive.google.com/uc?export=download&id=1rvn6dTKzl5kNOCfQmhMkTrco0xucDAFq" });
         pdfs.push({ name: "S2  - MATH CYBER TD 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
     }else if (course === "S2" && subCourse === "TP") {
         pdfs.push({ name: "S2  - MATH CYBER TP 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
