@@ -194,14 +194,19 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S1 TP - Cpp", path: `${courseFolder}4.pdf` });
         pdfs.push({ name: "S1 TP - SE", path: `${courseFolder}5.zip` });
     }else if (course === "S2" && subCourse === "Cours") {
+        pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1IInP06OEl71pjSkr5gs5Cu5QblEoPqlx" });
         pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 1", path: "https://docs.google.com/presentation/d/1DHWYiH4s4MhNs60rNyhn920HWiGQnQvi/export/pptx" });
+        pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=11hIe7FYg1gT9IIWya_S_DO_fp93i_qrv" });
+        pdfs.push({ name: "S2  - MATH CYBER 2", path: "https://drive.google.com/uc?export=download&id=10sJYMvpbhXcFAyL8Op2tAEQIg1NcuZgT" });
+        pdfs.push({ name: "S2  - MATH CYBER 3", path: "https://drive.google.com/uc?export=download&id=1SNp7V-R9COdGXxWAkZ02Mrxn8WW9ByiL" });
         pdfs.push({ name: "S2  - SEANCE 2 BD AVANCE", path: "https://drive.google.com/uc?export=download&id=1bU8jehdUKzsD1r6KFNwkYWuI8Oty1vUc" });
     }else if (course === "S2" && subCourse === "TD") {
-        pdfs.push({ name: "S2  - RESAUX SANS FILS TD 1", path: "https://drive.google.com/uc?export=download&id=1R3gGoBbE6Lp4tfE2ICWdMSgga0AhE-eO" });
-        pdfs.push({ name: "S2  - RESAUX SANS FILS TD 2", path: "https://drive.google.com/uc?export=download&id=1rvn6dTKzl5kNOCfQmhMkTrco0xucDAFq" });
-        pdfs.push({ name: "S2  - MATH CYBER TD 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
+        pdfs.push({ name: "S2  - RESEAU SANS FILS 1", path: "https://drive.google.com/uc?export=download&id=1R3gGoBbE6Lp4tfE2ICWdMSgga0AhE-eO" });
+        pdfs.push({ name: "S2  - RESEAU SANS FILS 2", path: "https://drive.google.com/uc?export=download&id=1rvn6dTKzl5kNOCfQmhMkTrco0xucDAFq" });
+        pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1hhcfHniz2vWGq5xyGfRjGlfWXBpI6E0j" });
+        pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
     }else if (course === "S2" && subCourse === "TP") {
-        pdfs.push({ name: "S2  - MATH CYBER TP 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
+        pdfs.push({ name: "S2  - MATH CYBER 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
     }else if (course === "S3" && subCourse === "Cours") {
         pdfs.push({ name: "S3  - Pas de cours pour le moment", path: `${courseFolder}lab1.pdf` });
     }else if (course === "S3" && subCourse === "TD") {
