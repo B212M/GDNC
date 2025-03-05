@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 
                 targetSection.appendChild(listItem); // Add file to the correct section
             } else {
-                alert(`Error: Section "${targetId}" not found.`);
+                // alert(`Error: Section "${targetId}" not found.`); later
             }
 
             // Reset form & hide sections after submission
@@ -69,7 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
             fileUploadSection.style.display = "none";
             courseTypeSection.style.display = "none";
 
-            showNotification(`"${file.name}" uploaded successfully!`);
+            // showNotification(`"${file.name}" uploaded successfully!`); later
+            showNotification(`Sorry Back End doesn t work for now...!`);
         }
     });
 });
@@ -194,6 +195,8 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S1 TP - Cpp", path: `${courseFolder}4.pdf` });
         pdfs.push({ name: "S1 TP - SE", path: `${courseFolder}5.zip` });
     }else if (course === "S2" && subCourse === "Cours") {
+        pdfs.push({ name: "S2  - Reseau sans Fil 1", path: "https://docs.google.com/uc?export=download&id=1gBgPtxc-BUqofAeXzWo3vpqi1-lIZv5E" });
+        pdfs.push({ name: "S2  - Reseau sans Fil 2", path: "https://docs.google.com/uc?export=download&id=1PLxuE9mCXidVJvO36-tX88Ei4NXFFgAB" });
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1IInP06OEl71pjSkr5gs5Cu5QblEoPqlx" });
         pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 1", path: "https://docs.google.com/presentation/d/1DHWYiH4s4MhNs60rNyhn920HWiGQnQvi/export/pptx" });
         pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 2", path: "https://docs.google.com/uc?export=download&id=1-SiUA2MT2g_Bb6WoZQ2J3iKzfw882S4k" });
@@ -201,6 +204,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - MATH CYBER 2", path: "https://drive.google.com/uc?export=download&id=10sJYMvpbhXcFAyL8Op2tAEQIg1NcuZgT" });
         pdfs.push({ name: "S2  - MATH CYBER 3", path: "https://drive.google.com/uc?export=download&id=1SNp7V-R9COdGXxWAkZ02Mrxn8WW9ByiL" });
         pdfs.push({ name: "S2  - SEANCE 2 BD AVANCE", path: "https://drive.google.com/uc?export=download&id=1bU8jehdUKzsD1r6KFNwkYWuI8Oty1vUc" });
+        pdfs.push({ name: "S2  - SEANCE 3 BD AVANCE", path: "https://drive.google.com/uc?export=download&id=1Vd3LGsz2IQa0ZIVBiNahLXm67AJtopc7" });
     }else if (course === "S2" && subCourse === "TD") {
         pdfs.push({ name: "S2  - RESEAU SANS FILS 1", path: "https://drive.google.com/uc?export=download&id=1R3gGoBbE6Lp4tfE2ICWdMSgga0AhE-eO" });
         pdfs.push({ name: "S2  - RESEAU SANS FILS 2", path: "https://drive.google.com/uc?export=download&id=1rvn6dTKzl5kNOCfQmhMkTrco0xucDAFq" });
@@ -208,6 +212,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
     }else if (course === "S2" && subCourse === "TP") {
         pdfs.push({ name: "S2  - MATH CYBER 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
+        pdfs.push({ name: "S2  - TP Reseaux avance 1  MANET Ad Hoc", path: "https://drive.google.com/uc?export=download&id=1pkxG7Z2jmPD9Mf-Wd4Wjw3lT0_nKM1FX" });
     }else if (course === "S3" && subCourse === "Cours") {
         pdfs.push({ name: "S3  - Pas de cours pour le moment", path: `${courseFolder}lab1.pdf` });
     }else if (course === "S3" && subCourse === "TD") {
