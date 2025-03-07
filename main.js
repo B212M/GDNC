@@ -236,3 +236,37 @@ function fetchSubCoursePDFs(course, subCourse) {
     }
     return pdfs;
 }
+
+window.onload = function() {
+    let updates = [
+        "📢 Mise à jour 1 : Nouveau cours,td ajouté en S2.",
+        "📢 Mise à jour 2 : TD1 disponibles pour le module Cybersecurity.",
+        "📢 Mise à jour 3 : Chap 1&2 disponibles pour le module Cybersecurity.",
+    ];
+
+    let messageBox = document.createElement("div");
+    messageBox.style.position = "fixed";
+    messageBox.style.top = "10px";
+    messageBox.style.left = "50%";
+    messageBox.style.transform = "translateX(-50%)";
+    messageBox.style.backgroundColor = "green";
+    messageBox.style.color = "white";
+    messageBox.style.padding = "15px 20px";
+    messageBox.style.borderRadius = "5px";
+    messageBox.style.boxShadow = "0px 4px 6px rgba(0,0,0,0.1)";
+    messageBox.style.zIndex = "1000";
+    messageBox.style.fontFamily = "Arial, sans-serif";
+    messageBox.style.fontSize = "18px";
+    messageBox.style.textAlign = "left";
+    messageBox.style.maxWidth = "400px";
+    
+    let messageContent = updates.map(update => `<p style="margin: 5px 0;">${update}</p>`).join("");
+    messageBox.innerHTML = messageContent;
+
+    document.body.appendChild(messageBox);
+
+    setTimeout(() => {
+        messageBox.style.display = "none";
+    }, 7000); // Disparaît après 7 secondes
+};
+
