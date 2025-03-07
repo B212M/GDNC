@@ -196,21 +196,59 @@ footer {
     text-align: center;
 }
 /* ensaf logo */
-/* Style for the ensaf logo */
-.ensaf {
-    display: block;  /* Makes the image a block element */
-    margin: 0 auto;  /* Centers the image horizontally */
-    max-width: 100%;  /* Ensures the image is responsive */
-    height: auto;  /* Maintains the aspect ratio */
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for a more polished look */
+/* Center the card */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Increased height */
+    perspective: 1200px; /* 3D depth */
 }
 
-/* For screens smaller than 600px */
-@media (max-width: 768px) {
-    .ensaf {
-        max-width: 90%;  /* Limits the image width on small screens */
-    }
+/* The flipping card */
+.card {
+    width: 400px; /* Bigger size */
+    height: 400px; /* Bigger size */
+    position: relative;
+    transform-style: preserve-3d;
+    animation: flipCard 4s infinite linear; /* Auto-spin every 4s */
+}
+
+/* Front & Back faces */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+/* Back face flips */
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* Ensure images fit */
+.card img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.card .ensaf{
+    width: 100%;
+}
+
+/* Animation for auto-flip */
+@keyframes flipCard {
+    0%, 100% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
 }
 
 /* courses section  */
