@@ -203,6 +203,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=11hIe7FYg1gT9IIWya_S_DO_fp93i_qrv" });
         pdfs.push({ name: "S2  - MATH CYBER 2", path: "https://drive.google.com/uc?export=download&id=10sJYMvpbhXcFAyL8Op2tAEQIg1NcuZgT" });
         pdfs.push({ name: "S2  - MATH CYBER 3", path: "https://drive.google.com/uc?export=download&id=1SNp7V-R9COdGXxWAkZ02Mrxn8WW9ByiL" });
+        pdfs.push({ name: "S2  - Cybersecurity 1 & 2", path: "https://drive.google.com/uc?export=download&id=1_92jCiiO6AyqfnQLsh4pKFC3_V82BaMf" });
         pdfs.push({ name: "S2  - SEANCE 2 BD AVANCE", path: "https://drive.google.com/uc?export=download&id=1bU8jehdUKzsD1r6KFNwkYWuI8Oty1vUc" });
         pdfs.push({ name: "S2  - SEANCE 3 BD AVANCE", path: "https://drive.google.com/uc?export=download&id=1Vd3LGsz2IQa0ZIVBiNahLXm67AJtopc7" });
     }else if (course === "S2" && subCourse === "TD") {
@@ -210,6 +211,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - RESEAU SANS FILS 2", path: "https://drive.google.com/uc?export=download&id=1rvn6dTKzl5kNOCfQmhMkTrco0xucDAFq" });
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1hhcfHniz2vWGq5xyGfRjGlfWXBpI6E0j" });
         pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
+        pdfs.push({ name: "S2  - Cybersecurity 1", path: "https://drive.google.com/uc?export=download&id=1BitxRTF1HxZSAUN15mGS6KWM62C2XgUU" });
     }else if (course === "S2" && subCourse === "TP") {
         pdfs.push({ name: "S2  - MATH CYBER 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
         pdfs.push({ name: "S2  - TP Reseaux avance 1  MANET Ad Hoc", path: "https://drive.google.com/uc?export=download&id=1pkxG7Z2jmPD9Mf-Wd4Wjw3lT0_nKM1FX" });
