@@ -249,17 +249,18 @@ window.onload = function() {
     messageBox.style.top = "10px";
     messageBox.style.left = "50%";
     messageBox.style.transform = "translateX(-50%)";
-    messageBox.style.backgroundColor = "green";
+    messageBox.style.backgroundColor = "green"; // Green
     messageBox.style.color = "white";
     messageBox.style.padding = "15px 20px";
     messageBox.style.borderRadius = "5px";
     messageBox.style.boxShadow = "0px 4px 6px rgba(0,0,0,0.1)";
     messageBox.style.zIndex = "1000";
     messageBox.style.fontFamily = "Arial, sans-serif";
-    messageBox.style.fontSize = "18px";
+    messageBox.style.fontSize = "16px";
     messageBox.style.textAlign = "left";
-    messageBox.style.maxWidth = "400px";
-    
+    messageBox.style.width = "80%"; // Takes 90% of the screen width
+    messageBox.style.maxWidth = "600px"; // Limits max width for larger screens
+
     let messageContent = updates.map(update => `<p style="margin: 5px 0;">${update}</p>`).join("");
     messageBox.innerHTML = messageContent;
 
@@ -267,6 +268,5 @@ window.onload = function() {
 
     setTimeout(() => {
         messageBox.style.display = "none";
-    }, 7000); // Disparaît après 7 secondes
+    }, 7000); // Disappears after 7 seconds
 };
-
