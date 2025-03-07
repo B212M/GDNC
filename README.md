@@ -13,7 +13,7 @@ The project is built using **HTML, CSS, and JavaScript** and is hosted on **GitH
 ---
 
 ## 🖼️ Screenshot  
- 
+ ![First Look](FirstLook.png) 
 
 ---
 
