@@ -198,6 +198,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - Reseau sans Fil 1", path: "https://docs.google.com/uc?export=download&id=1gBgPtxc-BUqofAeXzWo3vpqi1-lIZv5E" });
         pdfs.push({ name: "S2  - Reseau sans Fil 2", path: "https://docs.google.com/uc?export=download&id=1PLxuE9mCXidVJvO36-tX88Ei4NXFFgAB" });
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1IInP06OEl71pjSkr5gs5Cu5QblEoPqlx" });
+        pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 2", path: "https://drive.google.com/uc?export=download&id=1ZoNBUcvLAIcFSiTSZjb7aqbrtazx6fTZ" });
         pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 1", path: "https://docs.google.com/presentation/d/1DHWYiH4s4MhNs60rNyhn920HWiGQnQvi/export/pptx" });
         pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 2", path: "https://docs.google.com/uc?export=download&id=1-SiUA2MT2g_Bb6WoZQ2J3iKzfw882S4k" });
         pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=11hIe7FYg1gT9IIWya_S_DO_fp93i_qrv" });
@@ -213,8 +214,9 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
         pdfs.push({ name: "S2  - Cybersecurity 1", path: "https://drive.google.com/uc?export=download&id=1BitxRTF1HxZSAUN15mGS6KWM62C2XgUU" });
     }else if (course === "S2" && subCourse === "TP") {
+        pdfs.push({ name: "S2  - RESEAU MOBILE MANET Ad Hoc 1", path: "https://drive.google.com/uc?export=download&id=1pkxG7Z2jmPD9Mf-Wd4Wjw3lT0_nKM1FX" });
+        pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1UgOCFfLgA4EgS-hSH88x5p6eNcXpABSR" });
         pdfs.push({ name: "S2  - MATH CYBER 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
-        pdfs.push({ name: "S2  - TP Reseaux avance 1  MANET Ad Hoc", path: "https://drive.google.com/uc?export=download&id=1pkxG7Z2jmPD9Mf-Wd4Wjw3lT0_nKM1FX" });
     }else if (course === "S3" && subCourse === "Cours") {
         pdfs.push({ name: "S3  - Pas de cours pour le moment", path: `${courseFolder}lab1.pdf` });
     }else if (course === "S3" && subCourse === "TD") {
@@ -239,9 +241,9 @@ function fetchSubCoursePDFs(course, subCourse) {
 
 window.onload = function() {
     let updates = [
-        "📢 Mise à jour 1 : Nouveau cours,td ajouté en S2.",
-        "📢 Mise à jour 2 : TD1 disponibles pour le module Cybersecurity.",
-        "📢 Mise à jour 3 : Chap 1&2 disponibles pour le module Cybersecurity.",
+        "📢 Mise à jour 1 : Nouveau cours,tp ajouté en S2.",
+        "📢 Mise à jour 2 : TP1 disponibles pour le module Reseau avance TCP/IP a rendre avant DIMANCHE.",
+        "📢 Mise à jour 3 : Chap 2 disponibles pour le module Reseau avnce TCP/IP.",
     ];
 
     let messageBox = document.createElement("div");
@@ -249,7 +251,7 @@ window.onload = function() {
     messageBox.style.top = "10px";
     messageBox.style.left = "50%";
     messageBox.style.transform = "translateX(-50%)";
-    messageBox.style.backgroundColor = "green"; // Green
+    messageBox.style.backgroundColor = "#28a745"; // Green shade
     messageBox.style.color = "white";
     messageBox.style.padding = "15px 20px";
     messageBox.style.borderRadius = "5px";
