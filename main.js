@@ -216,6 +216,7 @@ function fetchSubCoursePDFs(course, subCourse) {
     }else if (course === "S2" && subCourse === "TP") {
         pdfs.push({ name: "S2  - RESEAU MOBILE MANET Ad Hoc 1", path: "https://drive.google.com/uc?export=download&id=1pkxG7Z2jmPD9Mf-Wd4Wjw3lT0_nKM1FX" });
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1UgOCFfLgA4EgS-hSH88x5p6eNcXpABSR" });
+        pdfs.push({ name: "S2  - EXCEL AVANCE 1", path: "https://drive.google.com/uc?export=download&id=1mbuxLdjAnv0Fh1we2ysuBviHoJmHulES" });
         pdfs.push({ name: "S2  - MATH CYBER 0", path: "https://drive.google.com/uc?export=download&id=1p3u14Ab_y14w3pNnhSMHPDP8e1XxmKau" });
     }else if (course === "S3" && subCourse === "Cours") {
         pdfs.push({ name: "S3  - Pas de cours pour le moment", path: `${courseFolder}lab1.pdf` });
@@ -243,7 +244,7 @@ window.onload = function() {
     let updates = [
         "📢 Mise à jour 1 : Nouveau cours,tp ajouté en S2.",
         "📢 Mise à jour 2 : TP1 disponibles pour le module Reseau avance TCP/IP a rendre avant DIMANCHE.",
-        "📢 Mise à jour 3 : Chap 2 disponibles pour le module Reseau avnce TCP/IP.",
+        "📢 Mise à jour 3 : TP1 disponibles pour le module Excel avance a rendre avant LUNDI.",
     ];
 
     let messageBox = document.createElement("div");
