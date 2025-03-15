@@ -199,8 +199,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - Reseau sans Fil 2", path: "https://docs.google.com/uc?export=download&id=1PLxuE9mCXidVJvO36-tX88Ei4NXFFgAB" });
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1IInP06OEl71pjSkr5gs5Cu5QblEoPqlx" });
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 2", path: "https://drive.google.com/uc?export=download&id=1ZoNBUcvLAIcFSiTSZjb7aqbrtazx6fTZ" });
-        pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 1", path: "https://docs.google.com/presentation/d/1DHWYiH4s4MhNs60rNyhn920HWiGQnQvi/export/pptx" });
-        pdfs.push({ name: "S2  - DIGITAL EXCEL AVANCE 2", path: "https://docs.google.com/uc?export=download&id=1-SiUA2MT2g_Bb6WoZQ2J3iKzfw882S4k" });
+        pdfs.push({ name: "S2  - Cours Digital Skills - Excel Avancé", path: "https://drive.google.com/uc?export=download&id=1cVcJ3PgqyokisinFoM-b4XlUHamI21ca" });
         pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=11hIe7FYg1gT9IIWya_S_DO_fp93i_qrv" });
         pdfs.push({ name: "S2  - MATH CYBER 2", path: "https://drive.google.com/uc?export=download&id=10sJYMvpbhXcFAyL8Op2tAEQIg1NcuZgT" });
         pdfs.push({ name: "S2  - MATH CYBER 3", path: "https://drive.google.com/uc?export=download&id=1SNp7V-R9COdGXxWAkZ02Mrxn8WW9ByiL" });
@@ -244,7 +243,7 @@ window.onload = function() {
     let updates = [
         "📢 Mise à jour 1 : Nouveau cours,tp ajouté en S2.",
         "📢 Mise à jour 2 : TP1 disponibles pour le module Reseau avance TCP/IP a rendre avant DIMANCHE.",
-        "📢 Mise à jour 3 : TP1 disponibles pour le module Excel avance a rendre avant LUNDI.",
+        "📢 Mise à jour 3 : Cours disponibles pour le module Cours Digital Skills - Excel Avancé.",
     ];
 
     let messageBox = document.createElement("div");
@@ -252,7 +251,7 @@ window.onload = function() {
     messageBox.style.top = "10px";
     messageBox.style.left = "50%";
     messageBox.style.transform = "translateX(-50%)";
-    messageBox.style.backgroundColor = "#28a745"; // Green shade
+    messageBox.style.backgroundColor = "green";  
     messageBox.style.color = "white";
     messageBox.style.padding = "15px 20px";
     messageBox.style.borderRadius = "5px";
