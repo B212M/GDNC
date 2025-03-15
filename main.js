@@ -212,6 +212,7 @@ function fetchSubCoursePDFs(course, subCourse) {
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1hhcfHniz2vWGq5xyGfRjGlfWXBpI6E0j" });
         pdfs.push({ name: "S2  - MATH CYBER 1", path: "https://drive.google.com/uc?export=download&id=1DqccloTgxwoNTWQdzOn6xqkVREadAVvm" });
         pdfs.push({ name: "S2  - Cybersecurity 1", path: "https://drive.google.com/uc?export=download&id=1BitxRTF1HxZSAUN15mGS6KWM62C2XgUU" });
+        pdfs.push({ name: "S2  - Cybersecurity 1 (suite)", path: "https://drive.google.com/uc?export=download&id=1cjx80kIGNeNOlJsZc8BDoJC13x55p6zK" });
     }else if (course === "S2" && subCourse === "TP") {
         pdfs.push({ name: "S2  - RESEAU MOBILE MANET Ad Hoc 1", path: "https://drive.google.com/uc?export=download&id=1pkxG7Z2jmPD9Mf-Wd4Wjw3lT0_nKM1FX" });
         pdfs.push({ name: "S2  - RESEAU AVANCE TCP/IP 1", path: "https://drive.google.com/uc?export=download&id=1UgOCFfLgA4EgS-hSH88x5p6eNcXpABSR" });
@@ -242,7 +243,7 @@ function fetchSubCoursePDFs(course, subCourse) {
 window.onload = function() {
     let updates = [
         "📢 Mise à jour 1 : Nouveau cours,tp ajouté en S2.",
-        "📢 Mise à jour 2 : TP1 disponibles pour le module Reseau avance TCP/IP a rendre avant DIMANCHE.",
+        "📢 Mise à jour 2 : TD1 suite disponibles pour le module Cybersecurite",
         "📢 Mise à jour 3 : Cours disponibles pour le module Cours Digital Skills - Excel Avancé.",
     ];
 
